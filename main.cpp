@@ -8,7 +8,7 @@ int main() {
     list.add(2);
     list.add(3);
 
-    while (list.current()) {
+    while (list.current() != nullptr) {
         std::cout << list.current() << std::endl;
         list.next();
     }
