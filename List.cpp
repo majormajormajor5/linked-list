@@ -7,7 +7,7 @@ List::List()
     cursor=nullptr;
 }
 
-void List::add(int data)
+inline void List::add(int data)
 {
     Node *node = new Node();
 
@@ -23,12 +23,12 @@ void List::add(int data)
     }
 }
 
-void List::next()
+inline void List::next()
 {
     this->cursor = this->cursor->next;
 }
 
-int List::current()
+inline int List::current()
 {
     if (this->cursor == nullptr) {
         return NULL;
@@ -37,7 +37,7 @@ int List::current()
     return this->cursor->data;
 }
 
-void List::rewind()
+inline void List::rewind()
 {
     this->cursor = this->head;
 }
