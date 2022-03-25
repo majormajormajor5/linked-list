@@ -5,6 +5,7 @@ List::List()
     head= nullptr;
     tail=nullptr;
     cursor=nullptr;
+
 }
 
 inline void List::add(int data)
